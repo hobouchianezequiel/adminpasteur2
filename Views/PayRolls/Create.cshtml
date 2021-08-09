@@ -1,0 +1,83 @@
+﻿@model delSur_Solutions.Models.PayRoll
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>PayRoll</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Date" class="control-label"></label>
+                <input asp-for="Date" class="form-control" />
+                <span asp-validation-for="Date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CodPrest" class="control-label"></label>
+                <input asp-for="CodPrest" class="form-control" />
+                <span asp-validation-for="CodPrest" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Trans" class="control-label"></label>
+                <input asp-for="Trans" class="form-control" />
+                <span asp-validation-for="Trans" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AuthorizationNumber" class="control-label"></label>
+                <input asp-for="AuthorizationNumber" class="form-control" />
+                <span asp-validation-for="AuthorizationNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Diagnosis" class="control-label"></label>
+                <input asp-for="Diagnosis" class="form-control" />
+                <span asp-validation-for="Diagnosis" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Coseg" class="control-label"></label>
+                <input asp-for="Coseg" class="form-control" />
+                <span asp-validation-for="Coseg" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="InvoicedPeriod" class="control-label"></label>
+                <input asp-for="InvoicedPeriod" class="form-control" />
+                <span asp-validation-for="InvoicedPeriod" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ConsultingRoom" class="control-label"></label>
+                <input asp-for="ConsultingRoom" class="form-control" />
+                <span asp-validation-for="ConsultingRoom" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Observations" class="control-label"></label>
+                <input asp-for="Observations" class="form-control" />
+                <span asp-validation-for="Observations" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Amount" class="control-label"></label>
+                <input asp-for="Amount" class="form-control" />
+                <span asp-validation-for="Amount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TotalAmount" class="control-label"></label>
+                <input asp-for="TotalAmount" class="form-control" />
+                <span asp-validation-for="TotalAmount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,95 @@
+﻿@model IEnumerable<delSur_Solutions.Models.PayRoll>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CodPrest)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Trans)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AuthorizationNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Diagnosis)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Coseg)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InvoicedPeriod)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ConsultingRoom)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Observations)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Amount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalAmount)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CodPrest)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Trans)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AuthorizationNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Diagnosis)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Coseg)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InvoicedPeriod)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ConsultingRoom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Observations)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Amount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalAmount)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
