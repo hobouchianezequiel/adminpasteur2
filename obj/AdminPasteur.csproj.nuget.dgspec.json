@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jehob\\source\\repos\\AdminPasteur\\AdminPasteur.csproj": {}
+    "C:\\Users\\jehob\\source\\adminpasteur2\\AdminPasteur.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jehob\\source\\repos\\AdminPasteur\\AdminPasteur.csproj": {
+    "C:\\Users\\jehob\\source\\adminpasteur2\\AdminPasteur.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jehob\\source\\repos\\AdminPasteur\\AdminPasteur.csproj",
+        "projectUniqueName": "C:\\Users\\jehob\\source\\adminpasteur2\\AdminPasteur.csproj",
         "projectName": "AdminPasteur",
-        "projectPath": "C:\\Users\\jehob\\source\\repos\\AdminPasteur\\AdminPasteur.csproj",
+        "projectPath": "C:\\Users\\jehob\\source\\adminpasteur2\\AdminPasteur.csproj",
         "packagesPath": "C:\\Users\\jehob\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jehob\\source\\repos\\AdminPasteur\\obj\\",
+        "outputPath": "C:\\Users\\jehob\\source\\adminpasteur2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
